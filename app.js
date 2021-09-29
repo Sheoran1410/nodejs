@@ -33,7 +33,7 @@ if (!isProduction) {
 if(isProduction){
   mongoose.connect(process.env.MONGODB_URI);
 } else {
-  mongoose.connect('mongodb://localhost/conduit');
+  mongoose.connect('mongodb://3.88.157.39:27017,54.211.232.176:27017,54.227.30.9:27017/conduit');
   mongoose.set('debug', true);
 }
 
@@ -47,7 +47,7 @@ app.use(require('./routes'));
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
-  err.status = 404;
+  err.status = 200;
   next(err);
 });
 
