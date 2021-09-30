@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+
+files:
+    - source: /
+      destination: /homeubuntu/sheorannodejs/node-express-realworld-example-app
+      timeout: 300  
+
+hooks:
+   ApplicationStop:
+         - location: stop_script.sh
+           timeout: 300
+           runas: root
+
+   ApplicationStart:
+         - location: start_script.sh
+           timeout: 300
+           runas: root
