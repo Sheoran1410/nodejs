@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /home/ubuntu/sheorannodejs/node-express-realworld-example
+cd /home/ubuntu/sheorannodejs/
 sudo npm install
