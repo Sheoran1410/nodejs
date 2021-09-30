@@ -11,11 +11,7 @@ hooks:
          - location: install_script.sh
            timeout: 300
            runas: root
-   ApplicationStop:
-         - location: stop_script.sh
-           timeout: 300
-           runas: root
-
+           
    ApplicationStart:
          - location: start_script.sh
            timeout: 300
