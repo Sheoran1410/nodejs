@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd /home/ubuntu/sheorannodejs/
-sudo npm start
+sudo pm2 start --name front npm -- start
