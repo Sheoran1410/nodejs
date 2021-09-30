@@ -3,7 +3,7 @@ os: linux
 
 files:
     - source: /
-      destination: /homeubuntu/sheorannodejs/node-express-realworld-example-app
+      destination: /home/ubuntu/sheorannodejs/node-express-realworld-example-app
       timeout: 300  
 
 hooks:
